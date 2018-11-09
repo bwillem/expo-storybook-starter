@@ -1,3 +1,4 @@
+# notes
 1. Consistency
 2. Maintainability
 3. Velocity
@@ -10,4 +11,4 @@ How something looks doesn’t matter as much as how maintainable it is. If it’
 
 Developers should be able to build and maintain new UI quickly and reliably with applepie’s api.
 
-The system should be resistant to company and codebase growing pains. It is never finished but in a constant state of reengineering. This needs to be taken into account.
+The system should be resistant to company and codebase growing pains. It is never finished but in a constant state of reengineering. Patterns are not dogmas, they can change and adapt.
