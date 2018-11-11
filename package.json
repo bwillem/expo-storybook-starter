@@ -7,17 +7,35 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "eject": "expo eject",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "storybook": "concurrently --kill-others \"storybook start\" \"expo start\""
   },
   "dependencies": {
-    "expo": "^30.0.1",
-    "react": "^16.6.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz"
+    "expo": "^31.0.4",
+    "react": "^16.7.0-alpha.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz"
   },
   "devDependencies": {
-    "@types/react": "^16.4.18",
-    "@types/react-native": "^0.57.7",
+    "@storybook/addon-actions": "^4.0.4",
+    "@storybook/addon-links": "^4.0.4",
+    "@storybook/addons": "^4.0.4",
+    "@storybook/react-native": "^4.0.4",
+    "@types/react": "^16.7.1",
+    "@types/react-native": "0.55.4",
+    "babel-preset-expo": "^5.0.0",
+    "concurrently": "^4.0.1",
+    "prop-types": "^15.6.2",
+    "react-dom": "^16.6.0",
     "react-native-typescript-transformer": "^1.2.10",
     "typescript": "^3.1.6"
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": [
+        "./storybook/stories"
+      ],
+      "pattern": "**/index.js",
+      "outputFile": "./storybook/storyLoader.js"
+    }
   }
 }

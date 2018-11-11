@@ -1,2 +1,1 @@
-import App from "./out/App";
-export default App;
+export default "./out/App";
