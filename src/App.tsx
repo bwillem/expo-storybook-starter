@@ -1,10 +1,10 @@
 import * as React from "react";
 import { View } from "react-native";
 
-// export default "../storybook";
+import SB from "../storybook";
 
 export default class App extends React.Component {
   render () {
-    return <View></View>;
+    return <SB />;
   }
 }
