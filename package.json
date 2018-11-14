@@ -3,12 +3,13 @@
   "main": "node_modules/expo/AppEntry.js",
   "private": true,
   "scripts": {
-    "start": "expo start",
+    "expo": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "eject": "expo eject",
     "tsc": "tsc",
-    "storybook": "concurrently --kill-others \"storybook start\" \"expo start\""
+    "storybook": "storybook start",
+    "start": "tsc && concurrently --kill-others \"storybook start\" \"expo start\""
   },
   "dependencies": {
     "expo": "^31.0.4",
@@ -27,6 +28,7 @@
     "prop-types": "^15.6.2",
     "react-dom": "^16.6.0",
     "react-native-typescript-transformer": "^1.2.10",
+    "schedule": "^0.4.0",
     "typescript": "^3.1.6"
   },
   "config": {
